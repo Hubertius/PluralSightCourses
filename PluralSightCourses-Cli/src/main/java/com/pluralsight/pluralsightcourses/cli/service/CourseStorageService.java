@@ -4,6 +4,7 @@ import com.pluralsight.pluralsightcourses.repository.domain.Course;
 import com.pluralsight.pluralsightcourses.repository.repository.CourseRepository;
 
 import java.util.List;
+import java.util.Optional;
 
 public class CourseStorageService {
 
@@ -17,7 +18,7 @@ public class CourseStorageService {
     public void storePluralSightCourses(List<PluralsightCourse> pluralsightCourses) {
         for(var psCourse: pluralsightCourses) {
             Course course = new Course(psCourse.id(),
-                    psCourse.title(), psCourse.durationInMinutes(), PS_BASE_URL + psCourse.contentUrl());
+                    psCourse.title(), psCourse.durationInMinutes(), PS_BASE_URL + psCourse.contentUrl(), Optional.empty());
             courseRepository.saveCourse(course);
         }
     }

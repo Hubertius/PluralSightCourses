@@ -11,6 +11,7 @@
     <modules>
         <module>PluralSightCourses-Repository</module>
         <module>PluralSightCourses-Cli</module>
+        <module>PluralsSightCourses-Server</module>
     </modules>
 
     <properties>
