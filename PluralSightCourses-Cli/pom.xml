@@ -12,11 +12,6 @@
     <groupId>org.example</groupId>
     <artifactId>PluralSightCourses-Cli</artifactId>
 
-    <properties>
-        <slf4j.version>2.1.0-alpha1</slf4j.version>
-        <jackson.version>2.13.3</jackson.version>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>com.pluralsight</groupId>
@@ -26,13 +21,10 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>${slf4j.version}</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
-            <version>${slf4j.version}</version>
-            <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
@@ -47,8 +39,6 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>RELEASE</version>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 
